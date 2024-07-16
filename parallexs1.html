@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parallex1</title>
+    <link rel="stylesheet" href="parallex1.css">
+</head><style>
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+
+}
+.container{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.background{
+    transform: translateZ(-40px) scale(5);
+    width: 100vw;
+}
+.foreground{
+    transform: translateZ(-20px) scale(3);
+}
+
+
+.background,.foreground{
+    position: absolute;
+    height: 100%;
+   object-fit: cover;
+   z-index: -1;
+}
+h1{
+    position: relative;
+    top: -22%;
+    left: 5%;
+    transform: translateX(-50px) scale(1);
+    font-size: 5rem;
+    letter-spacing: 4px;
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,3);
+    text-align: center;
+}
+section{
+    /* background-color: rgba(45, 45, 45); */
+    color:white;
+    margin-top: -5.4rem;
+}
+.desc
+{
+    text-align: center;
+    padding-top: 5rem;
+}
+.text{
+    font-size: 1rem;
+    padding: 2rem 2rem;
+    margin: 12.8rem 0;
+    background-color: black;
+}
+.bg{
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    background-size:cover;
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+}
+
+.bg1{
+    background-image: url(img/sport-1.jpg);
+}
+.bg2{
+    background-image: url(./img/sport-2.jpg);
+}
+.bg3
+{
+    background-image: url(./img/sport-3.jpg);
+}
+.text2
+{
+    margin:14rem 0;
+}
+.text1
+{
+    margin:0 0;
+    margin-top: 2rem;
+}
+</style>
+<body>
+    <div id="wrapper">
+        
+        <section>
+            <h2 class="desc"> ADVENTURE TIME</h2>
+            <p class="text text1">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, in sapiente ullam assumenda labore dolore fuga quidem repudiandae atque possimus sunt nemo fugit? Amet, modi tenetur! At pariatur quisquam voluptates in doloremque fugit incidunt hic rerum quaerat repellendus! Quibusdam quidem ipsam porro tempore ratione consequuntur magnam atque earum, pariatur perspiciatis a debitis repellendus aliquid explicabo ea at consequatur eveniet unde fuga non modi possimus labore. Placeat magni ipsam rem. Distinctio tenetur impedit <br><br>quia assumenda, blanditiis optio voluptatem cumque, molestias expedita asperiores consectetur. Labore soluta repellat quis accusamus quasi tempore eius fuga laudantium rem, illo numquam cumque itaque aliquam distinctio! Id?
+            </p>
+
+            <div class="bg bg1">
+                <h2 class="desc">BIKING</h2>
+                <p class="text">
+                    neque corporis dicta nihil qui nisi magni soluta ullam. Facilis culpa corrupti aperiam, natus nulla ut, quae autem enim doloribus at quidem earum debitis, aut tempore doloremque magni ducimus consequatur exercitationem atque voluptatum. Saepe, itaque nostrum maiores, earum pariatur harum iusto magnam illo corrupti rerum accusamus. Impedit fugit, veritatis tempore, optio omnis quas eum, dolorem esse inventore sapiente at in totam? Nihil possimus dolorum fugiat voluptas hic voluptatum modi nesciunt maxime temporibus facilis asperiores debitis veritatis molestias doloremque in aliquid rerum esse ullam, consequuntur officiis vitae. Dolorum vero inventore, debitis illum explicabo eius iusto tempore nisi sapiente tempora molestias fuga aliquid nam ipsam sint, qui tenetur ut expedita iste quasi. Rem culpa fugit pariatur dolorem, recusandae numquam soluta in dolores quo nam autem maiores quas error provident repellat possimus. Tenetur doloremque architecto aliquid ea tempore quibusdam, labore sapiente quod quisquam, recusandae facilis impedit voluptatibus debitis ab! Dolorum sequi ratione quis eum aspernatur natus nemo pariatur, vero ad nam!
+                </p>
+            </div>
+            
+            <div class="bg bg2">
+                <h2 class="desc">PARA GLIDING</h2>
+                <p class="text text2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, id, explicabo maxime officia delectus quas dolor nihil temporibus quibusdam nostrum nam sint nesciunt minima laudantium earum iusto! Quibusdam labore eligendi omnis corrupti neque minima sint dolorum illum quaerat numquam sit saepe enim, accusamus magnam quae quam architecto. Veritatis ratione id maiores eos ducimus fugiat. Provident iure numquam unde maxime, aperiam blanditiis nobis assumenda sapiente commodi cumque quam tenetur, voluptatum, id dolores. Doloremque dignissimos maiores odio assumenda commodi aliquam voluptates voluptatum consectetur odit ut rem aliquid quidem, veritatis consequatur? Possimus incidunt cum sequi numquam ullam, dolores excepturi ea molestiae odio natus eveniet sit delectus error enim fugiat neque dolorum facere eligendi vel hic. A assumenda eaque, saepe?
+                </p>
+            </div>
+            
+            <div class="bg bg3">
+                <h2 class="desc">SURFINING</h2>
+                <p class="text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, in sapiente ullam assumenda labore dolore fuga quidem repudiandae atque possimus sunt nemo fugit? Amet, modi tenetur! At pariatur quisquam voluptates in doloremque fugit incidunt hic rerum quaerat repellendus! Quibusdam quidem ipsam porro tempore ratione consequuntur magnam atque earum, pariatur perspiciatis a debitis repellendus aliquid explicabo ea at consequatur eveniet unde fuga non modi possimus labore. Placeat magni ipsam rem. Distinctio tenetur impedit <br><br>quia assumenda, blanditiis optio voluptatem cumque, molestias expedita asperiores consectetur. Labore soluta repellat quis accusamus quasi tempore eius fuga laudantium rem, illo numquam cumque itaque aliquam distinctio! Id?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem illum veritatis qui quo, adipisci sequi! Amet fuga dicta quo, labore dolorem, cumque earum fugit dolorum saepe doloribus recusandae laboriosam error ab quibusdam exercitationem neque. Et iure distinctio quisquam reprehenderit, libero dolorem quae rem veritatis sunt eos! Itaque, ratione ipsam quasi modi, adipisci dolores magni possimus tempore optio perferendis minus mollitia repudiandae at nihil vitae ducimus quo odio. Nihil voluptatibus, possimus quaerat esse incidunt enim alias eius earum porro natus. Omnis exercitationem quos ab ipsam facilis culpa at neque qui quia! Voluptates atque ratione sequi ut sit quae itaque. Incidunt, impedit.
+                </p>
+            </div>
+            
+        </section>
+    </div>
+</body>
+</html>
